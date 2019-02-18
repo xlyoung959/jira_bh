@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e57807ed-e2c9-405d-8232-b2309e35ede9" name="Default Changelist" comment="" />
+    <list default="true" id="e57807ed-e2c9-405d-8232-b2309e35ede9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zlsoft/bhjira/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zlsoft/bhjira/controller/IndexController.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +64,7 @@
           <entry key="class" value="74" />
           <entry key="html" value="1" />
           <entry key="issueOfBH" value="5" />
-          <entry key="java" value="46" />
+          <entry key="java" value="47" />
           <entry key="properties" value="21" />
           <entry key="xml" value="9" />
         </counts>
@@ -70,7 +73,7 @@
         <counts>
           <entry key="CLASS" value="74" />
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="46" />
+          <entry key="JAVA" value="47" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="Properties" value="21" />
           <entry key="XML" value="9" />
@@ -81,7 +84,7 @@
           <entry key="class" value="5" />
           <entry key="dummy" value="1" />
           <entry key="html" value="13" />
-          <entry key="java" value="7631" />
+          <entry key="java" value="7868" />
           <entry key="properties" value="11" />
           <entry key="xml" value="48" />
         </counts>
@@ -90,7 +93,7 @@
         <counts>
           <entry key="CLASS" value="5" />
           <entry key="HTML" value="13" />
-          <entry key="JAVA" value="7631" />
+          <entry key="JAVA" value="7868" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="11" />
           <entry key="XML" value="48" />
@@ -103,12 +106,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zlsoft/bhjira/controller/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="134" column="5" lean-forward="true" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
+            <state relative-caret-position="156">
+              <caret line="157" column="8" lean-forward="true" selection-start-line="157" selection-start-column="8" selection-end-line="157" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#index#0;class#IndexController#0" />
                 <element signature="docComment;method#addIssue#0;class#IndexController#0" />
+                <element signature="method#addIssue#0;class#IndexController#0" />
               </folding>
             </state>
           </provider>
@@ -118,7 +122,7 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="608">
-              <caret line="40" column="21" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="40" selection-end-column="21" />
+              <caret line="40" column="21" selection-start-line="36" selection-start-column="8" selection-end-line="40" selection-end-column="21" />
               <folding>
                 <element signature="n#parent#0;n#project#0;n#!!top" />
                 <element signature="n#properties#0;n#project#0;n#!!top" />
@@ -148,7 +152,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zlsoft/bhjira/services/impl/JiraServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="177" lean-forward="true" selection-start-line="177" selection-end-line="177" />
+              <caret line="177" selection-start-line="177" selection-end-line="177" />
               <folding>
                 <element signature="docComment;method#getIssueType#0;class#JiraServiceImpl#0" />
                 <element signature="method#getIssueType#0;class#JiraServiceImpl#0" />
@@ -403,12 +407,12 @@
       <workItem from="1550134508614" duration="3027000" />
       <workItem from="1550192561586" duration="5286000" />
       <workItem from="1550199122462" duration="12331000" />
-      <workItem from="1550451737852" duration="8230000" />
+      <workItem from="1550451737852" duration="12621000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192071000" />
+    <option name="totallyTimeSpent" value="196462000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -436,7 +440,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.18226601" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Debug" order="5" visible="true" weight="0.06732348" />
+      <window_info active="true" anchor="bottom" id="Debug" order="5" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Spring" order="6" weight="0.32840723" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32840723" />
       <window_info anchor="bottom" id="Terminal" order="8" />
@@ -503,7 +507,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zlsoft/bhissue/ReceiveIssue.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zlsoft/bhissue/BhIssue.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/atlassian/jira/jira-rest-java-client-api/5.1.2-2bd0a62e/jira-rest-java-client-api-5.1.2-2bd0a62e.jar!/com/atlassian/jira/rest/client/api/domain/input/IssueInputBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -832,7 +835,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zlsoft/bhjira/services/impl/JiraServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="177" lean-forward="true" selection-start-line="177" selection-end-line="177" />
+          <caret line="177" selection-start-line="177" selection-end-line="177" />
           <folding>
             <element signature="docComment;method#getIssueType#0;class#JiraServiceImpl#0" />
             <element signature="method#getIssueType#0;class#JiraServiceImpl#0" />
@@ -853,7 +856,7 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
-          <caret line="40" column="21" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="40" selection-end-column="21" />
+          <caret line="40" column="21" selection-start-line="36" selection-start-column="8" selection-end-line="40" selection-end-column="21" />
           <folding>
             <element signature="n#parent#0;n#project#0;n#!!top" />
             <element signature="n#properties#0;n#project#0;n#!!top" />
@@ -873,14 +876,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/JAVA/JDK/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="474" column="11" selection-start-line="474" selection-start-column="11" selection-end-line="474" selection-end-column="11" />
+          <folding>
+            <element signature="e#19327#19328#0" expanded="true" />
+            <element signature="e#19410#19411#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zlsoft/bhjira/controller/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="134" column="5" lean-forward="true" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
+        <state relative-caret-position="156">
+          <caret line="157" column="8" lean-forward="true" selection-start-line="157" selection-start-column="8" selection-end-line="157" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#index#0;class#IndexController#0" />
             <element signature="docComment;method#addIssue#0;class#IndexController#0" />
+            <element signature="method#addIssue#0;class#IndexController#0" />
           </folding>
         </state>
       </provider>

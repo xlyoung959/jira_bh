@@ -155,6 +155,7 @@ public class IndexController {
 		map.put("reporterName",issue.getReporter());
 		//经办人的信息
 		map.put("assigneeName",issue.getAssignee());
+		
 		if(issue.getStatus().getName().equals("完成")){
 			System.out.println("将状态为完成的问题返回给bh");
 			return map;
@@ -168,6 +169,9 @@ public class IndexController {
 			//该问题没有符合的状态，返回为空
 			return null;
 		}
+
+
+
 	}
 
 
