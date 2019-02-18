@@ -1,38 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e57807ed-e2c9-405d-8232-b2309e35ede9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/12829.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zlsoft/bhjira/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zlsoft/bhjira/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zlsoft/bhjira/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zlsoft/bhjira/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zlsoft/bhjira/jobs/JiraJobs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zlsoft/bhjira/jobs/JiraJobs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zlsoft/bhjira/services/JiraService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zlsoft/bhjira/services/JiraService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zlsoft/bhjira/services/impl/JiraServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zlsoft/bhjira/services/impl/JiraServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-pro.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-pro.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com.zlsoft.BhJira/hip_jira/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com.zlsoft.BhJira/hip_jira/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-pro.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-pro.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zlsoft/bhjira/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zlsoft/bhjira/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zlsoft/bhjira/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zlsoft/bhjira/controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zlsoft/bhjira/controller/IndexDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zlsoft/bhjira/controller/IndexDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zlsoft/bhjira/jobs/JiraJobs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zlsoft/bhjira/jobs/JiraJobs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zlsoft/bhjira/services/JiraService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zlsoft/bhjira/services/JiraService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zlsoft/bhjira/services/client/RestClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zlsoft/bhjira/services/client/RestClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zlsoft/bhjira/services/client/impl/MyJIRARestClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zlsoft/bhjira/services/client/impl/MyJIRARestClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zlsoft/bhjira/services/impl/JiraServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zlsoft/bhjira/services/impl/JiraServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/hip_jira-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-    </list>
+    <list default="true" id="e57807ed-e2c9-405d-8232-b2309e35ede9" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +81,7 @@
           <entry key="class" value="5" />
           <entry key="dummy" value="1" />
           <entry key="html" value="13" />
-          <entry key="java" value="7625" />
+          <entry key="java" value="7631" />
           <entry key="properties" value="11" />
           <entry key="xml" value="48" />
         </counts>
@@ -121,7 +90,7 @@
         <counts>
           <entry key="CLASS" value="5" />
           <entry key="HTML" value="13" />
-          <entry key="JAVA" value="7625" />
+          <entry key="JAVA" value="7631" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="11" />
           <entry key="XML" value="48" />
@@ -134,8 +103,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zlsoft/bhjira/controller/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="155" column="16" selection-start-line="155" selection-start-column="16" selection-end-line="155" selection-end-column="16" />
+            <state relative-caret-position="158">
+              <caret line="134" column="5" lean-forward="true" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#index#0;class#IndexController#0" />
@@ -434,12 +403,12 @@
       <workItem from="1550134508614" duration="3027000" />
       <workItem from="1550192561586" duration="5286000" />
       <workItem from="1550199122462" duration="12331000" />
-      <workItem from="1550451737852" duration="6922000" />
+      <workItem from="1550451737852" duration="8230000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190763000" />
+    <option name="totallyTimeSpent" value="192071000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -467,7 +436,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.18226601" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Debug" order="5" visible="true" weight="0.01642036" />
+      <window_info active="true" anchor="bottom" id="Debug" order="5" visible="true" weight="0.06732348" />
       <window_info anchor="bottom" id="Spring" order="6" weight="0.32840723" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32840723" />
       <window_info anchor="bottom" id="Terminal" order="8" />
@@ -906,8 +875,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zlsoft/bhjira/controller/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="155" column="16" selection-start-line="155" selection-start-column="16" selection-end-line="155" selection-end-column="16" />
+        <state relative-caret-position="158">
+          <caret line="134" column="5" lean-forward="true" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#index#0;class#IndexController#0" />
