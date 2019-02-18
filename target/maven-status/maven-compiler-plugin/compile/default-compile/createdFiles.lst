@@ -1,7 +1,0 @@
-com\zlsoft\bhjira\services\impl\JiraServiceImpl.class
-com\zlsoft\bhjira\controller\IndexDto.class
-com\zlsoft\bhjira\services\JiraService.class
-com\zlsoft\bhjira\App.class
-com\zlsoft\bhjira\jobs\JiraJobs.class
-com\zlsoft\bhjira\services\client\impl\MyJIRARestClient.class
-com\zlsoft\bhjira\services\client\RestClient.class

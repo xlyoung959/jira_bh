@@ -33,6 +33,31 @@
 			<artifactId>jira-rest-java-client-api</artifactId>
 			<version>${jira-rest-java-client.version}</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.alibaba/fastjson  json解析-->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.8</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+
+
+		<!--热部署-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+
 		<!-- <dependency>
 			<groupId>com.atlassian.jira</groupId>
 			<artifactId>jira-rest-java-client</artifactId>
@@ -60,6 +85,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-freemarker</artifactId>
         </dependency>
+		<dependency>
+			<groupId>com.atlassian.util.concurrent</groupId>
+			<artifactId>atlassian-util-concurrent</artifactId>
+			<version>3.0.0</version>
+		</dependency>
         <!-- <dependency>
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-starter-quartz</artifactId>

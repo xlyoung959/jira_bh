@@ -1,20 +1,16 @@
 package com.zlsoft.bhjira.services.impl;
 
-import java.net.URISyntaxException;
+import java.util.Iterator;
 import java.util.List;
 
+import com.atlassian.jira.rest.client.api.domain.*;
+
+import com.atlassian.jira.rest.client.api.domain.input.UserInput;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import com.atlassian.jira.rest.client.api.JiraRestClient;
-import com.atlassian.jira.rest.client.api.domain.BasicIssue;
-import com.atlassian.jira.rest.client.api.domain.BasicProject;
-import com.atlassian.jira.rest.client.api.domain.Field;
-import com.atlassian.jira.rest.client.api.domain.Issue;
-import com.atlassian.jira.rest.client.api.domain.IssueType;
-import com.atlassian.jira.rest.client.api.domain.Project;
-import com.atlassian.jira.rest.client.api.domain.User;
 import com.atlassian.jira.rest.client.api.domain.input.FieldInput;
 import com.atlassian.jira.rest.client.api.domain.input.IssueInput;
 import com.atlassian.jira.rest.client.api.domain.input.IssueInputBuilder;
@@ -31,15 +27,18 @@ public class JiraServiceImpl implements JiraService{
 	
 	@Autowired
     private JiraRestClient jiraConnection;
-	
+
+    /**
+     * 问题类型的ID是10000到10006
+     * @param issueType the issue type
+     * @return
+     */
 	@Override
 	public IssueType getIssueType(String issueType) {
-		 List<IssueType> issueTypeList = (List<IssueType>) jiraConnection.getMetadataClient().getIssueTypes();
-//	        log.debug("List of available issue type [ {} ]", issueTypeList);
-	        for (IssueType issue : issueTypeList) {
-//	            log.info("Issue type [ {} ]" + issue.getName());
-	            if (issue.getName().equalsIgnoreCase(issueType)) {
-	                return issue;
+		 Iterable<IssueType> issueTypeList = jiraConnection.getMetadataClient().getIssueTypes().claim();
+	        for (IssueType issueT : issueTypeList) {
+	            if (issueT.getName().equalsIgnoreCase(issueType)) {
+	                return issueT;
 	            }
 	        }
 	        return null;
@@ -48,6 +47,7 @@ public class JiraServiceImpl implements JiraService{
 	@Override
 	public Iterable<BasicProject> getAllProject() {
 		 return  jiraConnection.getProjectClient().getAllProjects().claim();
+
 	}
 
 	@Override
@@ -55,26 +55,31 @@ public class JiraServiceImpl implements JiraService{
         return jiraConnection.getProjectClient().getProject(key).claim();
 	}
 
+
+	/**
+	 * getIssueType(issue.getIssueType().getName()).getId()
+	 * @param
+	 * @return
+	 */
 	@Override
 	public BasicIssue createIssueInJira(Issue issue) {
-		 IssueInputBuilder issueInputBuilder = new IssueInputBuilder(getProjectByKey(project).getKey(), getIssueType(issue.getIssueType().getName()).getId());
-	        User user = getUserByName(issue.getReporter().getName());
-
+		 IssueInputBuilder issueInputBuilder = new IssueInputBuilder(getProjectByKey(project).getKey(),issue.getIssueType().getId());
+	        /*User user = getUserByName(issue.getReporter().getName());
 	        // create user
 	        if(user == null) {
 	        	throw new RuntimeException("could not found user!");
 //	            createUser(organisation, issue.getReporter());
 //	            user = getUserByName(issue.getReporter().getName());
-	        }
-
+	        }*/
 	        IssueInput issueInput = issueInputBuilder.setSummary(issue.getSummary())
 	                        .setDescription(issue.getDescription())
-	                        .setReporter(user)
-//	                      .setFieldValue(getField("Request Type").getId(), "Technical Support")
+	                        //.setReporter(user)
+                      //.setFieldValue(getField("Request Type").getId(), "Technical Support")
 	                        .build();
 	        BasicIssue issueCreated = jiraConnection.getIssueClient().createIssue(issueInput).claim();
 //	        log.info("New issue has been created with key [ {} ]", issueCreated);
 	        return issueCreated;
+
 	}
 
 	@Override
@@ -84,7 +89,6 @@ public class JiraServiceImpl implements JiraService{
 
 	@Override
 	public Field getField(String fieldName) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -95,15 +99,24 @@ public class JiraServiceImpl implements JiraService{
 	}
 
 	@Override
-	public Issue getIssue(String issueKey) {
-		// TODO Auto-generated method stub
-		return null;
+	public Issue getIssue(String issueKey) {//根据问题的关键字得到单一问题
+        Issue issue = null;
+        try {
+            issue = jiraConnection.getIssueClient().getIssue(issueKey).claim();
+
+            // 得到问题后续的工作流，可对iter进行for遍历,遍历出来也就是工作流，待完成，处理中，完成的信息
+            /*Iterable<Transition> iter = jiraConnection.getIssueClient()
+                    .getTransitions(issue).claim();*/
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return issue;
 	}
 
 	@Override
-	public void createUser(String organisation, String user) {
+	public void createUser( UserInput userInput) {
 		   try {
-//	            invokePostMethod(host + USER_URI_PREFIX + "?name=" + organisation, "{\"emails\":[\""+ user +"\"]}");
+               jiraConnection.getUserClient().createUser(userInput).claim();
 	        }catch (Exception exception) {
 //	            log.error("Exception during user creation", exception);
 	        }
@@ -114,9 +127,8 @@ public class JiraServiceImpl implements JiraService{
 		 User user = null;
 	        try {
 	            user = jiraConnection.getUserClient().getUser(username).claim();
-//	            log.info("Jira User [ {} ]", user);
 	        } catch (Exception exception) {
-//	            log.error("Unable to retrieve user from jira [ {} ]", exception.getMessage());
+
 	        }
 	        return user;
 	}
@@ -124,7 +136,45 @@ public class JiraServiceImpl implements JiraService{
 	@Override
 	public boolean isUserExist(String username) {
 		// TODO Auto-generated method stub
-		return false;
+		//根据用户名·判断用户是否存在，返回 true或者,false
+		User user=null;
+		user=jiraConnection.getUserClient().getUser(username).claim();
+		if(user.getName()==username){
+			return true;
+		}
+		else {
+			return false;
+		}
 	}
+
+
+    @Override
+	public int getIssueNum(String jql){//查询某个项目下面的问题的多少、数量
+		SearchResult searchResult=jiraConnection.getSearchClient().searchJql(jql).claim();
+		 return searchResult.getTotal();
+	}
+
+	@Override
+    public String getAllIssueKey(String jql){
+		SearchResult searchResult=jiraConnection.getSearchClient().searchJql(jql).claim();
+		Iterable<Issue> issues= searchResult.getIssues();
+		String issueKeys="";
+		for(Issue issue :issues){
+			issueKeys=issueKeys+issue.getKey()+",";
+		}
+		return issueKeys;
+    }
+
+    @Override
+	public String getIssueSummery(String issueKey){
+		String summary=jiraConnection.getIssueClient().getIssue(issueKey).claim().getSummary();
+		return summary;
+	}
+
+    @Override
+	public void deleteIssue(String issueKey){
+		jiraConnection.getIssueClient().deleteIssue(issueKey,false).claim();
+	}
+
 
 }
